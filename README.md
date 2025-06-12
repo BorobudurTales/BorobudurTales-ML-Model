@@ -50,6 +50,7 @@ Hasil akhir image Preparation
   - Proses integrasi dilakukan menggunakan **Flask API**
   - Endpoint: `POST /predict` menerima gambar dan mengembalikan narasi terkait
 ### 6. Deployment
+Deployment Model menggunakan [HuggingFace](https://andre770-borobudurrr.hf.space/)
 
 ---
 ## Arsitektur Model Resnet Without Top Layer
@@ -57,35 +58,28 @@ Hasil akhir image Preparation
 ![image](https://github.com/user-attachments/assets/c8f72d33-2f31-48cf-b6d5-4379abf652db)
 
 ---
-## Evaluasi 
-- Precission@k : Berarti kita melihat berapa banyak gambar yang benar-benar mirip dari k gambar teratas yang ditampilkan. hal ini mendapatkan, Precision@5 sebesar 1.0 (100%)
+## Hasil & Evaluasi 
+**Input Image**
+<p align="center"> <img src="https://github.com/user-attachments/assets/01a769b9-de72-45cb-a812-a1ef5c0b7487" width="500"/> </p>
+
+| Rank |                                                   Image                                                  | Similarity |
+| :--: | :------------------------------------------------------------------------------------------------------: | :--------: |
+|   1  | <img src="https://github.com/user-attachments/assets/61b351b5-00c0-48dd-a981-2be702ecd7e0" width="500"/> | **1.0000** |
+|   2  | <img src="https://github.com/user-attachments/assets/fcc06c02-4ec5-4041-bac8-a05ad66429e7" width="500"/> | **0.9012** |
+|   3  | <img src="https://github.com/user-attachments/assets/bbb37b9a-c775-41b0-9bf2-9bf872a77af2" width="500"/> | **0.8980** |
+
+
+
+- Precission@k : Berarti kita melihat berapa banyak gambar yang benar-benar mirip dari k gambar teratas yang ditampilkan.
+    - Hasil Precision@5 with threshold 0.5: 1.0000
 - Threshold Similarity : Nilai kemiripan gambar lebih tinggi dari nilai 0,5 maka dianggap cukup mirip. Kalau dibawah, dianggap tidak mirip
-  - Akurasi : 72,97%
 
 ---
 ## Requirements dan Installation
-**1. Clone Repository**
 ```
-git clone https://github.com/rezanagita/DBS-CAPSTONE-ML.git
-cd capstone
-```
-**2. Buat Virtual Environment**
-```
-python -m venv env
-source env/bin/activate      # Mac/Linux
-env\Scripts\activate         # Windows
-```
-**3. Intall Dependencies**
-```
+git clone https://github.com/rezanagita/BorobudurTales-ML-Model.git
+cd borobudurTales-Model
 pip install -r requirements.txt
 ```
-**4. Jalankan Proyek**
-```
-python app.py
-```
-**5. Contoh Penggunaan**
-```md
-1. Upload gambar relief melalui endpoint API.
-2. Sistem akan mencari gambar paling mirip dari dataset.
-3. Narasi dan nilai moral dari gambar ditampilkan sebagai respons.
-```
+
+
