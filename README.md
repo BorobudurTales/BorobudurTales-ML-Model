@@ -54,7 +54,7 @@ Hasil akhir image Preparation
 ---
 ## Arsitektur Model Resnet Without Top Layer
 
-![Screenshot 2025-06-11 213442](https://github.com/user-attachments/assets/5db903ed-4909-4aa1-9e91-e1b0ea20b918)
+![image](https://github.com/user-attachments/assets/c8f72d33-2f31-48cf-b6d5-4379abf652db)
 
 ---
 ## Evaluasi 
