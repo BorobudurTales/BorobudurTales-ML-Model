@@ -79,7 +79,7 @@ Deployment Model menggunakan [HuggingFace](https://solihin0212-borobudur-tales-5
 ```
 git clone https://github.com/rezanagita/BorobudurTales-ML-Model.git
 cd borobudurTales-Model
-pip install -r requirements.txt
+Jalankan Proyek format .ipynb
 ```
 
 
