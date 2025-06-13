@@ -47,10 +47,10 @@ Hasil akhir image Preparation
 ### 4. Simpan Fitur
   - Fitur disimpan dalam file `.h5` untuk efisiensi dan akses cepat
 ### 5. Integrasi hasil model image similarity dengan dataset narasi 
-  - Proses integrasi dilakukan menggunakan **Flask API**
+  - Proses integrasi dilakukan menggunakan **FastApi**
   - Endpoint: `POST /predict` menerima gambar dan mengembalikan narasi terkait
 ### 6. Deployment
-Deployment Model menggunakan [HuggingFace](https://andre770-borobudurrr.hf.space/)
+Deployment Model menggunakan [HuggingFace](https://solihin0212-borobudur-tales-5394554.hf.space/)
 
 ---
 ## Arsitektur Model Resnet Without Top Layer
